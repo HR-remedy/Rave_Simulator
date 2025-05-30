@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Reports and Data Extraction</title>
+  <link rel="stylesheet" href="../css/styles.css" />
+  <link rel="stylesheet" href="../css/components.css" />
+</head>
+<body>
+  <header class="header">
+    <div class="header-content">
+      <div class="logo">
+        <h2>Medidata Rave Simulator</h2>
+        <p class="subtitle">Reports and Data Extraction</p>
+      </div>
+    </div>
+  </header>
+
+  <div class="container screen-container">
+    <nav class="breadcrumb">
+      <ul class="breadcrumb-list">
+        <li class="breadcrumb-item"><a href="home_dashboard.html" class="breadcrumb-link">Home</a></li>
+        <li class="breadcrumb-item breadcrumb-current">Reports</li>
+      </ul>
+    </nav>
+
+    <div class="form-container">
+      <div class="form-section">
+        <h3>Generate Report</h3>
+        <div class="form-group">
+          <label class="form-label" for="report-type">Report Type</label>
+          <select id="report-type" class="form-select">
+            <option>Visit Summary Report</option>
+            <option>Adverse Event Report</option>
+            <option>Subject Progress Report</option>
+            <option>Query Status Report</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label class="form-label">Select Format</label><br/>
+          <label><input type="radio" name="format" class="form-radio"> PDF</label>
+          <label><input type="radio" name="format" class="form-radio"> CSV</label>
+        </div>
+
+        <div class="btn-group">
+          <button class="btn btn-primary" onclick="alert('Simulated download started')">Download Report</button>
+          <a href="home_dashboard.html" class="btn btn-secondary">Back to Dashboard</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer class="footer">
+    <div class="disclaimer">
+      <p><strong>Note:</strong> This simulator is for educational use only. No real clinical data is stored or processed.</p>
+    </div>
+    <div class="credit">
+      <p>&copy; 2025 Medidata Rave Simulator </p>
+    </div>
+  </footer>
+</body>
+</html>

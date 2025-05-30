@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Medidata Rave EDC - ALZ-NET Subjects</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/components.css">
+</head>
+<body>
+    <header class="header">
+        <div class="header-content">
+            <div class="logo">
+                <h2>Medidata Rave EDC</h2>
+                <span class="subtitle">HR Remedy India</span>
+            </div>
+            <div style="margin-left: auto; color: white;">
+                Your Institution | <a href="../index.html" style="color: #93c5fd;">Logout</a>
+            </div>
+        </div>
+    </header>
+
+    <div class="container">
+        <nav class="breadcrumb">
+            <ul class="breadcrumb-list">
+                <li class="breadcrumb-item">
+                    <a href="../index.html" class="breadcrumb-link">Home</a>
+                </li>
+                <li class="breadcrumb-item">
+                    <a href="home_dashboard.html" class="breadcrumb-link">Dashboard</a>
+                </li>
+                <li class="breadcrumb-item">
+                    <a href="study_list.html" class="breadcrumb-link">ALZ-NET</a>
+                </li>
+                <li class="breadcrumb-item">
+                    <span class="breadcrumb-current">Subject List</span>
+                </li>
+            </ul>
+        </nav>
+
+        <div class="screen-container">
+            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 2rem;">
+                <div>
+                    <h1 style="color: #1e3a8a; margin: 0;">ALZ-NET</h1>
+                    <p style="color: #6b7280; margin: 0.25rem 0 0 0;">Enrolled Subjects at Your Institution</p>
+                </div>
+                <div>
+                    <button class="btn btn-primary">Add New Subject</button>
+                </div>
+            </div>
+
+            <div class="nav-tabs" style="margin-bottom: 2rem;">
+                <a href="#" class="nav-tab active">All Subjects</a>
+                <a href="#" class="nav-tab">Screening</a>
+                <a href="#" class="nav-tab">Randomized</a>
+                <a href="#" class="nav-tab">Completed</a>
+                <a href="#" class="nav-tab">Withdrawn</a>
+            </div>
+
+            <div class="card">
+                <div class="card-header">
+                    <h2 class="card-title">Subject Data Management</h2>
+                    <p class="card-subtitle">Click on a Subject ID to access patient forms and data entry</p>
+                </div>
+
+                <div style="display: flex; gap: 1rem; margin-bottom: 1rem; flex-wrap: wrap;">
+                    <input type="text" placeholder="Search subjects..." class="form-input" style="flex: 1; min-width: 200px;">
+                    <select class="form-select" style="min-width: 150px;">
+                        <option>All Statuses</option>
+                        <option>Screening</option>
+                        <option>Randomized</option>
+                        <option>Active</option>
+                        <option>Completed</option>
+                    </select>
+                    <button class="btn btn-secondary">Filter</button>
+                </div>
+
+                <table class="data-table">
+                    <thead>
+                        <tr>
+                            <th>Subject ID</th>
+                            <th>Status</th>
+                            <th>Last Visit</th>
+                            <th>Next Visit</th>
+                            <th>Data Entry Status</th>
+                            <th>Queries</th>
+                            <th>Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr style="cursor: pointer;" onclick="window.location.href='enrollment_forms.html'">
+                            <td><strong style="color: #3b82f6;">ALZ-001</strong></td>
+                            <td><span class="status-indicator status-complete">Randomized</span></td>
+                            <td>Baseline<br><span style="color: #6b7280; font-size: 0.875rem;">2024-05-15</span></td>
+                            <td>Week 4<br><span style="color: #6b7280; font-size: 0.875rem;">2024-06-12</span></td>
+                            <td><span class="status-indicator status-pending">Incomplete</span></td>
+                            <td><span class="status-indicator status-query">2 Open</span></td>
+                            <td>
+                                <a href="enrollment_forms.html" class="btn btn-primary" style="padding: 0.5rem 1rem; font-size: 0.875rem;">Enter Data</a>
+                            </td>
+                        </tr>
+                        <tr style="cursor: pointer;">
+                            <td><strong style="color: #3b82f6;">ALZ-002</strong></td>
+                            <td><span class="status-indicator status-complete">Active</span></td>
+                            <td>Week 8<br><span style="color: #6b7280; font-size: 0.875rem;">2024-05-20</span></td>
+                            <td>Week 12<br><span style="color: #6b7280; font-size: 0.875rem;">2024-06-17</span></td>
+                            <td><span class="status-indicator status-complete">Complete</span></td>
+                            <td><span style="color: #6b7280;">None</span></td>
+                            <td>
+                                <a href="enrollment_forms.html" class="btn btn-secondary" style="padding: 0.5rem 1rem; font-size: 0.875rem;">View Data</a>
+                            </td>
+                        </tr>
+                        <tr style="cursor: pointer;">
+                            <td><strong style="color: #3b82f6;">ALZ-003</strong></td>
+                            <td><span class="status-indicator status-pending">Screening</span></td>
+                            <td>Screening<br><span style="color: #6b7280; font-size: 0.875rem;">2024-05-25</span></td>
+                            <td>TBD<br><span style="color: #6b7280; font-size: 0.875rem;">Pending</span></td>
+                            <td><span class="status-indicator status-error">Overdue</span></td>
+                            <td><span class="status-indicator status-query">1 Open</span></td>
+                            <td>
+                                <a href="enrollment_forms.html" class="btn btn-warning" style="padding: 0.5rem 1rem; font-size: 0.875rem;">Urgent</a>
+                            </td>
+                        </tr>
+                        <tr style="cursor: pointer;">
+                            <td><strong style="color: #3b82f6;">ALZ-004</strong></td>
+                            <td><span class="status-indicator status-complete">Randomized</span></td>
+                            <td>Week 2<br><span style="color: #6b7280; font-size: 0.875rem;">2024-05-28</span></td>
+                            <td>Week 6<br><span style="color: #6b7280; font-size: 0.875rem;">2024-06-25</span></td>
+                            <td><span class="status-indicator status-complete">Complete</span></td>
+                            <td><span style="color: #6b7280;">None</span></td>
+                            <td>
+                                <a href="enrollment_forms.html" class="btn btn-secondary" style="padding: 0.5rem 1rem; font-size: 0.875rem;">View Data</a>
+                            </td>
+                        </tr>
+                        <tr style="cursor: pointer;">
+                            <td><strong style="color: #3b82f6;">ALZ-005</strong></td>
+                            <td><span class="status-indicator status-complete">Active</span></td>
+                            <td>Baseline<br><span style="color: #6b7280; font-size: 0.875rem;">2024-05-30</span></td>
+                            <td>Week 4<br><span style="color: #6b7280; font-size: 0.875rem;">2024-06-27</span></td>
+                            <td><span class="status-indicator status-pending">In Progress</span></td>
+                            <td><span style="color: #6b7280;">None</span></td>
+                            <td>
+                                <a href="enrollment_forms.html" class="btn btn-primary" style="padding: 0.5rem 1rem; font-size: 0.875rem;">Enter Data</a>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <div style="display: flex; justify-content: between; align-items: center; margin-top: 1rem; padding-top: 1rem; border-top: 1px solid #e5e7eb;">
+                    <p style="color: #6b7280; margin: 0;">Showing 5 of 5 subjects</p>
+                    <div style="margin-left: auto;">
+                        <button class="btn btn-secondary" disabled>Previous</button>
+                        <button class="btn btn-secondary" disabled style="margin-left: 0.5rem;">Next</button>
+                    </div>
+                </div>
+            </div>
+
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 1rem; margin-top: 2rem;">
+                <div class="card">
+                    <div class="card-header">
+                        <h3 class="card-title">Study Progress</h3>
+                    </div>
+                    <div style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 1rem;">
+                        <div style="text-align: center;">
+                            <div style="font-size: 2rem; font-weight: bold; color: #3b82f6;">5</div>
+                            <div style="color: #6b7280; font-size: 0.875rem;">Total Subjects</div>
+                        </div>
+                        <div style="text-align: center;">
+                            <div style="font-size: 2rem; font-weight: bold; color: #10b981;">3</div>
+                            <div style="color: #6b7280; font-size: 0.875rem;">Randomized</div>
+                        </div>
+                        <div style="text-align: center;">
+                            <div style="font-size: 2rem; font-weight: bold; color: #f59e0b;">3</div>
+                            <div style="color: #6b7280; font-size: 0.875rem;">Open Queries</div>
+                        </div>
+                        <div style="text-align: center;">
+                            <div style="font-size: 2rem; font-weight: bold; color: #ef4444;">1</div>
+                            <div style="color: #6b7280; font-size: 0.875rem;">Overdue</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-header">
+                        <h3 class="card-title">Quick Actions</h3>
+                    </div>
+                    <div style="display: flex; flex-direction: column; gap: 0.75rem;">
+                        <a href="query_management.html" class="btn btn-primary">Manage Queries</a>
+                        <a href="reports.html" class="btn btn-secondary">Generate Reports</a>
+                        <a href="adverse_events.html" class="btn btn-warning">Report Adverse Event</a>
+                        <button class="btn btn-secondary">Export Subject List</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="disclaimer">
+            <p><strong>Educational Purpose Only:</strong> This simulator demonstrates subject management in Rave EDC.</p>
+        </div>
+    </footer>
+</body>
+</html>

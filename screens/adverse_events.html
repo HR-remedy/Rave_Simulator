@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Adverse Events | Medidata Rave Simulator</title>
+  <link rel="stylesheet" href="../css/styles.css">
+  <link rel="stylesheet" href="../css/components.css">
+</head>
+<body>
+  <header class="header">
+    <div class="header-content">
+      <div class="logo">
+        <h2>Medidata Rave Simulator</h2>
+        <p class="subtitle">Adverse Event Reporting</p>
+      </div>
+    </div>
+  </header>
+
+  <div class="container screen-container">
+    <nav class="breadcrumb">
+      <ul class="breadcrumb-list">
+        <li class="breadcrumb-item"><a href="enrollment_forms.html" class="breadcrumb-link">Enrollment</a></li>
+        <li class="breadcrumb-item breadcrumb-current">Adverse Events</li>
+      </ul>
+    </nav>
+
+    <form class="form-container">
+      <div class="form-section">
+        <h3>Event Details</h3>
+        <div class="form-group">
+          <label class="form-label">Event Description</label>
+          <textarea class="form-textarea" placeholder="Describe the adverse event..." rows="4"></textarea>
+        </div>
+        <div class="form-group">
+          <label class="form-label">Onset Date</label>
+          <input type="date" class="form-input">
+        </div>
+        <div class="form-group">
+          <label class="form-label">Severity</label>
+          <select class="form-select">
+            <option value="">Select</option>
+            <option value="mild">Mild</option>
+            <option value="moderate">Moderate</option>
+            <option value="severe">Severe</option>
+          </select>
+        </div>
+      </div>
+      <div class="btn-group">
+        <button type="submit" class="btn btn-primary">Save</button>
+        <a href="enrollment_forms.html" class="btn btn-secondary">Back</a>
+      </div>
+    </form>
+  </div>
+
+  <footer class="footer">
+    <div class="disclaimer">
+      <p><strong>Note:</strong> This is a fictional reporting form for demo only.</p>
+    </div>
+    <div class="credit">
+      <p>&copy; 2025 Medidata Rave Simulator </p>
+    </div>
+  </footer>
+</body>
+</html>

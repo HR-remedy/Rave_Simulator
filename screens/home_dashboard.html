@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Medidata Rave EDC - iMedidata Dashboard</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/components.css">
+</head>
+<body>
+    <header class="header">
+        <div class="header-content">
+            <div class="logo">
+                <h2>iMedidata</h2>
+                <span class="subtitle">Clinical Research Platform</span>
+            </div>
+            <div style="margin-left: auto; color: white;">
+                Welcome, Site Coordinator | <a href="../index.html" style="color: #93c5fd;">Logout</a>
+            </div>
+        </div>
+    </header>
+
+    <div class="container">
+        <nav class="breadcrumb">
+            <ul class="breadcrumb-list">
+                <li class="breadcrumb-item">
+                    <a href="../index.html" class="breadcrumb-link">Home</a>
+                </li>
+                <li class="breadcrumb-item">
+                    <span class="breadcrumb-current">iMedidata Dashboard</span>
+                </li>
+            </ul>
+        </nav>
+
+        <div class="screen-container">
+            <div class="welcome-section">
+                <h1>Welcome to iMedidata</h1>
+                <p class="description">Your gateway to clinical research applications and studies</p>
+            </div>
+
+            <div class="alert alert-info">
+                <strong>Pending Invitation:</strong> You have a pending invitation to join the ALZ-NET study. Please accept to continue.
+                <div style="margin-top: 1rem;">
+                    <a href="study_list.html" class="btn btn-success">Accept Invitation</a>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-header">
+                    <h2 class="card-title">My Applications</h2>
+                    <p class="card-subtitle">Clinical research applications you have access to</p>
+                </div>
+                
+                <div class="navigation-grid" style="grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));">
+                    <div class="nav-section">
+                        <h3>Rave EDC</h3>
+                        <p style="color: #6b7280; font-size: 0.9rem; margin-bottom: 1rem;">Electronic Data Capture</p>
+                        <a href="study_list.html" class="btn btn-primary" style="width: 100%;">Access Rave EDC</a>
+                    </div>
+                    
+                    <div class="nav-section" style="opacity: 0.6;">
+                        <h3>Rave CTMS</h3>
+                        <p style="color: #6b7280; font-size: 0.9rem; margin-bottom: 1rem;">Clinical Trial Management</p>
+                        <button class="btn btn-secondary" style="width: 100%;" disabled>Not Available</button>
+                    </div>
+                    
+                    <div class="nav-section" style="opacity: 0.6;">
+                        <h3>Rave Safety</h3>
+                        <p style="color: #6b7280; font-size: 0.9rem; margin-bottom: 1rem;">Safety Data Management</p>
+                        <button class="btn btn-secondary" style="width: 100%;" disabled>Not Available</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-header">
+                    <h2 class="card-title">Required Training</h2>
+                    <p class="card-subtitle">Complete mandatory eLearning courses</p>
+                </div>
+                
+                <div class="alert alert-warning">
+                    <strong>Mandatory Course:</strong> Medidata Classic Rave EDC Essentials for Clinical Research Coordinators must be completed to access ALZ-NET EDC.
+                </div>
+                
+                <table class="data-table">
+                    <thead>
+                        <tr>
+                            <th>Course Name</th>
+                            <th>Status</th>
+                            <th>Due Date</th>
+                            <th>Action</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Medidata Classic Rave EDC Essentials for Clinical Research Coordinators</td>
+                            <td><span class="status-indicator status-complete">Completed</span></td>
+                            <td>N/A</td>
+                            <td>-</td>
+                        </tr>
+                        <tr>
+                            <td>Good Clinical Practice (GCP) Refresher</td>
+                            <td><span class="status-indicator status-pending">Pending</span></td>
+                            <td>Next Month</td>
+                            <td><a href="#" class="btn btn-primary" style="padding: 0.5rem 1rem; font-size: 0.875rem;">Start Course</a></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="card">
+                <div class="card-header">
+                    <h2 class="card-title">Recent Activity</h2>
+                    <p class="card-subtitle">Your latest actions and updates</p>
+                </div>
+                
+                <ul style="list-style: none; padding: 0;">
+                    <li style="padding: 1rem; border-bottom: 1px solid #e5e7eb; display: flex; justify-content: space-between; align-items: center;">
+                        <div>
+                            <strong>Added to ALZ-NET study</strong>
+                            <p style="color: #6b7280; margin: 0.25rem 0 0 0; font-size: 0.9rem;">You have been granted access to the ALZ-NET clinical trial</p>
+                        </div>
+                        <span style="color: #6b7280; font-size: 0.875rem;">Today</span>
+                    </li>
+                    <li style="padding: 1rem; border-bottom: 1px solid #e5e7eb; display: flex; justify-content: space-between; align-items: center;">
+                        <div>
+                            <strong>Training completed</strong>
+                            <p style="color: #6b7280; margin: 0.25rem 0 0 0; font-size: 0.9rem;">Rave EDC Essentials course successfully completed</p>
+                        </div>
+                        <span style="color: #6b7280; font-size: 0.875rem;">Yesterday</span>
+                    </li>
+                    <li style="padding: 1rem; display: flex; justify-content: space-between; align-items: center;">
+                        <div>
+                            <strong>Account activated</strong>
+                            <p style="color: #6b7280; margin: 0.25rem 0 0 0; font-size: 0.9rem;">iMedidata account successfully activated</p>
+                        </div>
+                        <span style="color: #6b7280; font-size: 0.875rem;">2 days ago</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="disclaimer">
+            <p><strong>Educational Purpose Only:</strong> This simulator demonstrates iMedidata functionality for training purposes.</p>
+        </div>
+    </footer>
+</body>
+</html>

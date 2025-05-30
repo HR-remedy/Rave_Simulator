@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Query Management | Medidata Rave Simulator</title>
+  <link rel="stylesheet" href="../css/styles.css">
+  <link rel="stylesheet" href="../css/components.css">
+</head>
+<body>
+  <header class="header">
+    <div class="header-content">
+      <div class="logo">
+        <h2>Medidata Rave Simulator</h2>
+        <p class="subtitle">Query Management</p>
+      </div>
+    </div>
+  </header>
+
+  <div class="container screen-container">
+    <nav class="breadcrumb">
+      <ul class="breadcrumb-list">
+        <li class="breadcrumb-item"><a href="enrollment_forms.html" class="breadcrumb-link">Enrollment</a></li>
+        <li class="breadcrumb-item breadcrumb-current">Query Management</li>
+      </ul>
+    </nav>
+
+    <div class="form-container">
+      <div class="form-section">
+        <h3>Open Queries</h3>
+        <table class="data-table">
+          <thead>
+            <tr>
+              <th>Subject ID</th>
+              <th>Field</th>
+              <th>Description</th>
+              <th>Status</th>
+              <th>Action</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>ALZ-001</td>
+              <td>Date of Birth</td>
+              <td>Missing or invalid date format</td>
+              <td><span class="status-indicator status-query">Open</span></td>
+              <td><button class="btn btn-success">Resolve</button></td>
+            </tr>
+            <tr>
+              <td>ALZ-002</td>
+              <td>ARIA Type</td>
+              <td>Field not completed</td>
+              <td><span class="status-indicator status-query">Open</span></td>
+              <td><button class="btn btn-success">Resolve</button></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="form-section">
+        <h3>Submit Query Response</h3>
+        <div class="form-group">
+          <label class="form-label">Select Query</label>
+          <select class="form-select">
+            <option value="">-- Select a Query --</option>
+            <option value="dob">ALZ-001 - DOB</option>
+            <option value="aria">ALZ-002 - ARIA Type</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label class="form-label">Response</label>
+          <textarea class="form-textarea" placeholder="Provide clarification or correction..."></textarea>
+        </div>
+        <div class="btn-group">
+          <button class="btn btn-primary">Submit Response</button>
+          <a href="enrollment_forms.html" class="btn btn-secondary">Back</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer class="footer">
+    <div class="disclaimer">
+      <p><strong>Note:</strong> Query handling is part of standard Rave EDC workflows for data review and resolution.</p>
+    </div>
+    <div class="credit">
+      <p>&copy; 2025 Medidata Rave Simulator</p>
+    </div>
+  </footer>
+</body>
+</html>
